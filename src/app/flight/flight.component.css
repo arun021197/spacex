@@ -1,0 +1,83 @@
+img{
+    height:150px;
+    width: 100%;
+   
+
+}
+.fligth{
+    padding: 10px;
+    
+}
+.main {
+    margin: 20px;
+    background-color: #ededed;
+    padding: 20px;
+}
+
+.btn{
+
+    margin: 10px;
+    height: 30px;
+}
+#year{
+
+    text-align: center;
+    text-decoration: underline;
+}
+.card{
+    border-radius: 5px;
+}
+.card1 {
+    margin: 10% 0% 0% 0%;
+}
+.card:hover{
+    border: 1px solid silver;
+
+}
+
+.head1 {
+    color: blue;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.main-container
+
+{
+
+    width:100%;
+
+    
+
+}
+
+.subcont1
+
+{
+
+    width:20%;
+
+    border:1px solid black;
+
+    float:left;
+
+}
+
+.subcont2
+
+{
+
+    width:79%;
+
+    border:1px solid black;
+
+    float:right;
+
+}
+
+.subcont1 button{
+
+    width:50%;
+
+}

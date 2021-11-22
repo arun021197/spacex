@@ -1,0 +1,58 @@
+<div class="main">
+   
+  
+    <div class="row">
+  
+      <div class="col-md-2">
+        <div class="card card1">
+       
+          <div class="row">
+            <button *ngFor="let a of years" (click)="send(a)" > {{a}} </button>
+          
+          </div>
+  
+          <h6 id="year">Successfully Launch </h6>
+          <div class="row">
+            <div class="col-md-6">
+              <button type="button" class="btn btn-success" (click)="sendSuccess('true')">True</button>
+            </div>
+            <div class="col-md-6">
+              <button type="button" class="btn btn-success" (click)="sendSuccess('false')">False</button>
+            </div>
+          </div>
+  
+          <h6 id="year">Successfully landing </h6>
+          <div class="row">
+            <div class="col-md-6">
+              <button type="button" class="btn btn-success" (click)="LandSuccLuanchSucc('true')">True</button>
+            </div>
+            <div class="col-md-6">
+              <button type="button" class="btn btn-success" (click)="LandSuccLuanchSucc('false')">false</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-md-3 fligth" *ngFor="let fights of  flightData">
+            <div class="card">
+              <div class="card-header"> <img class="img-responsive" src="{{fights.links.mission_patch}}">
+              </div>
+              <div class="card-body">
+                <b class="head1">{{fights.mission_name}} #{{fights.flight_number}}</b><br><br>
+  
+                <b> Mission Ids:</b> {{fights.mission_id[0]}}<br>
+                <b> Launch Year:</b> {{fights.launch_year}}<br>
+                <b> Successful Launch:</b> {{fights.launch_success}}<br>
+                <b> Successfull Landing :</b> {{fights.rocket.first_stage.cores[0].land_success}}
+              </div>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>   
+  
